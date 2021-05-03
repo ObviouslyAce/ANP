@@ -60,7 +60,12 @@ body {
     float: none;
   }
 }
-
+#navbar {
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
 
     </style>
     <!-- Add both scripts inside the <head> tag. -->
@@ -81,20 +86,22 @@ body {
 </script>
   </head>
   <body>
-  <div class="header">
-  <a href="./index.html" class="logo">MJR</a>
-  <div class="header-right">
-    <a class="active" href="#home">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./blog.html">Blog</a>
-  </div>
-</div>
-<div style="padding-left:20px;border: 2px solid dodgerblue">
-  <h1>Hello, from MJR</h1>
-  <p>Obviously this is your first time on the website, y'know,
+    <nav id=navbar>
+      <div class="header">
+        <a href="./index.html" class="logo">MJR</a>
+        <div class="header-right">
+          <a class="active" href="#home">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./blog.html">Blog</a>
+        </div>
+      </div>
+    </nav>
+    <div style="padding-left:20px;border: 2px solid dodgerblue; padding-top: 80px;">
+      <h1>Hello, from MJR</h1>
+      <p>Obviously this is your first time on the website, y'know,
     cause it's sorta boring. well... unless you like buttons that go darker
     when you hover you're mouse over them(in my opinion, they're pretty cool).
   </p>
 </div>
-   </body>
+</body>
 </html>

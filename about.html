@@ -95,6 +95,12 @@ hr.solid {
 border-top: 3px solid #bbb;
 padding-right: 10px;
 }
+#navbar {
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
     </style>
     <!-- Add both scripts inside the <head> tag. -->
 <!-- You can change the quality parameter to any value between 1 and 100 -->
@@ -114,15 +120,17 @@ padding-right: 10px;
 </script>
   </head>
   <body>
-  <div class="header">
-  <a href="./index.html" class="logo">MJR</a>
-  <div class="header-right">
-    <a href="./index.html">Home</a>
-    <a class="active" href="./about.html">About</a>
-    <a href="./blog.html">Blog</a>
-    </div>
-  </div>
-<div style="padding-left:20px; border: 2px solid skyBlue">
+    <nav id=navbar>
+      <div class="header">
+        <a href="./index.html" class="logo">MJR</a>
+        <div class="header-right">
+          <a href="./index.html">Home</a>
+          <a class="active" href="./about.html">About</a>
+          <a href="./blog.html">Blog</a>
+        </div>
+      </div>
+    </nav>
+<div style="padding-left:20px; border: 2px solid skyBlue; padding-top: 80px;">
  <h1> The About Page, <i>Obviously</i></h1>
   </div>
   <div style='padding-top:10px'>

@@ -74,6 +74,12 @@ img {
   max-width: 100%;
   display: block;
 }
+#navbar {
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
     </style>
     <!-- Add both scripts inside the <head> tag. -->
 <!-- You can change the quality parameter to any value between 1 and 100 -->
@@ -93,6 +99,7 @@ img {
 </script>
   </head>
   <body>
+    <nav id=navbar>
       <div class="header">
         <a href="./index.html" class="logo">MJR</a>
         <div class="header-right">
@@ -101,7 +108,8 @@ img {
           <a class="active" href="./blog.html">Blog</a>
         </div>
       </div>
-      <div style="padding-left:20px;">
+    </nav>
+      <div style="padding-left:20px; padding-top:80px">
         <h1>Blog</h1>
       </div>
     <hr>
