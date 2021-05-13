@@ -5,19 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The About Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <style>
     * {box-sizing: border-box;}
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
-  background: linear-gradient(35deg, #CCFFFF, #CCFFFF, #CCFFFF, #FFCCCC);
+  background: #CCFFFF;
 }
 
 .header a {
@@ -34,16 +35,16 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
-  color: hsl(10deg, 100%, 80%);
+  color: black;
 }
 
 .header a:hover {
-  background-color: #9AF1F1;
-  color: white;
+  background-color: #FFCCCC;
+  color: black;
 }
 
 .header a.active {
-  background: linear-gradient(35deg, #9AF1F1, #FFCCCC);
+  background: #ff6666;
   color: white;
 }
 
@@ -105,6 +106,12 @@ padding-right: 10px;
   left: 0px;
   right: 0px;
 }
+ .fontClass {
+   font-family:"Oswald";
+ }
+  h1 {
+    font-family: "Oswald";
+  }
     </style>
     <!-- Add both scripts inside the <head> tag. -->
 <!-- You can change the quality parameter to any value between 1 and 100 -->
@@ -134,8 +141,9 @@ padding-right: 10px;
         </div>
       </div>
     </nav>
-<div style="padding-left:20px; border: 2px solid skyBlue; padding-top: 80px;">
- <h1> The About Page, <i>Obviously</i></h1>
+<div class=fontClass>
+  <div style="padding-left:20px; border: 2px solid skyBlue; padding-top: 80px;">
+    <h1> The About Page, <i>Obviously</i></h1>
   </div>
   <div style='padding-top:10px'>
     <div style='padding-left:20px; border: 2px solid pink'>
@@ -153,5 +161,6 @@ padding-right: 10px;
 maybe I'll even redesign it sometime, but for now, for a 15 year old who's just starting out to make a website(Without a website builder), I think this is pretty good.</p>
    <hr class=solid>
  </div>
+</div>
 
 </html>
