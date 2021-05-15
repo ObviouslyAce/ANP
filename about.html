@@ -12,19 +12,19 @@
 body {
   margin: 0;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
-  background-color: #FFFEE0;
+  background-color: black;
 }
 
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
-  background: #CCFFFF;
+  background: linear-gradient(45deg, #39378D, #FF2B95);
 }
 
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -36,12 +36,12 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .header a:hover {
   background-color: #FFCCCC;
-  color: black;
+  color: white;
 }
 
 .header a.active {
@@ -81,10 +81,9 @@ body {
 }
 
 .button1 {
-background-color: skyblue;
-color: black;
+background: linear-gradient(45deg, #39378D, #FF2B95);
+color: white;
 float: left;
-color: black;
 text-align: center;
 padding: 12px;
 text-decoration: none;
@@ -97,10 +96,7 @@ border-radius: 4px;
 background-color: dodgerBlue;
 color: white;
 }
-hr.solid {
-border-top: 3px solid #bbb;
-padding-right: 10px;
-}
+
 #navbar {
 
   top: 0px;
@@ -112,7 +108,45 @@ padding-right: 10px;
  }
   h1 {
     font-family: "Oswald";
+    color: white
   }
+  p {
+    color: white;
+  }
+  h2 {
+    color: white;
+  }
+  .Title {
+    border-radius: 20px;
+    background: linear-gradient(45deg, #39378D, #FF2B95);
+    width: 45%;
+  }
+  .Title2 {
+    border-radius: 20px;
+    background: linear-gradient(45deg, #39378D, #FF2B95);
+    width: 54%;
+  }
+  .mainPageContent {
+    border-radius: 20px;
+    background: linear-gradient(45deg, #39378D, #FF2B95);
+    width: 83%
+  }
+
+  .mainPageContent2 {
+    border-radius: 20px;
+    background: linear-gradient(45deg, #39378D, #FF2B95);
+    width: 95%
+  }
+  hr {
+    background: linear-gradient(45deg, #39378D, #FF2B95);
+    height: 5px;
+    border: none;
+  }
+  .link {
+    color: skyBlue;
+  }
+}
+
     </style>
     <!-- Add both scripts inside the <head> tag. -->
 <!-- You can change the quality parameter to any value between 1 and 100 -->
@@ -143,24 +177,24 @@ padding-right: 10px;
       </div>
     </nav>
 <div class=fontClass>
-  <div style="padding-left:20px; border: 2px solid skyBlue;">
+  <div class="Title" style="padding-left:20px;">
     <h1> The About Page, <i>Obviously</i></h1>
   </div>
   <div style='padding-top:10px'>
-    <div style='padding-left:20px; border: 2px solid pink'>
+    <div class="mainPageContent"style="text-align:center;">
       <p>This is the about page as you have undoubtedly noticed. This page describes itself so it's kinda describe-ception.
       If you wanna know more about my life, there's a blog on the website. (Don't expect it to update every day though)</p>
       <button class='button button1' onclick="window.location.href='./blog.html';">Blog</button>
     </div>
   </div>
   <div style="padding-top:60px;">
-  <hr class=solid>
-  <h2 style="padding-left:20px;">The Actual "About" Part Of The About Page</h2>
-  <p style="padding-left:25px;">For those just arriving on this website, I, online, am known as ObviouslyAce. The only real discord
-    I have is "ObviouslyAce#6020" and my twitter handle is <a href="https://twitter.com/ObviouslyAce" target="_blank" rel="noopener noreferrer">@ObviouslyAce</a>. I am a 15 year-old hobbyist coder(so don't expect anything big coming from me for a bit)
+  <hr>
+  <h2 class="Title2" style="padding-left:20px; align:center">The Actual "About" Part Of The About Page</h2>
+  <p class="mainPageContent2" style="text-align:center;">For those just arriving on this website, I, online, am known as ObviouslyAce. The only real discord
+    I have is "ObviouslyAce#6020" and my twitter handle is <a class="link" href="https://twitter.com/ObviouslyAce" target="_blank" rel="noopener noreferrer">@ObviouslyAce</a>. I am a 15 year-old hobbyist coder(so don't expect anything big coming from me for a bit)
   and I game in my spare time if I don't feel like coding something. This website is going to be used as a blog and a place to test things that I learn over time. I will be updating the blog when I make any "big" changes to the website,
 maybe I'll even redesign it sometime, but for now, for a 15 year old who's just starting out to make a website(Without a website builder), I think this is pretty good.</p>
-   <hr class=solid>
+   <hr>
  </div>
 </div>
 

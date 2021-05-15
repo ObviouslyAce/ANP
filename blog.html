@@ -12,19 +12,19 @@
 body {
   margin: 0;
   font-family:"Oswald", Arial, Helvetica, sans-serif;
-  background-color: #FFFEE0;
+  background-color: black;
 }
 
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
-  background: #CCFFFF;
+  background: linear-gradient(45deg, #39378D, #FF2B95);
 }
 
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -40,7 +40,7 @@ body {
 
 .header a:hover {
   background-color: #FFCCCC;
-  color: black;
+  color: white;
 }
 
 .header a.active {
@@ -64,12 +64,23 @@ body {
   }
 }
   .blogEntreeTitle {
-  padding-left:10px;
-  font-family:"Oswald"
+
+  font-family:"Oswald";
+  border-radius: 20px;
+  background: linear-gradient(45deg, #39378D, #FF2B95);
+  width: 28%;
+  height: 40px;
+  text-align: center;
+  color: white;
 }
   .blogEntree {
     padding-left:15px;
     font-family:"Oswald";
+    border-radius: 20px;
+    background: linear-gradient(45deg, #39378D, #FF2B95);
+    width: 83%;
+    color: white;
+    text-align: center;
   }
   hr.solid {
   border-top: 3px solid #bbb;
@@ -78,6 +89,7 @@ body {
 img {;
   max-width: 100%;
   display: block;
+  color: white;
 }
 #navbar {
 
@@ -87,7 +99,35 @@ img {;
 }
  h1 {
    font-family: "Oswald";
+   color:white;
  }
+ p {
+   color: white;
+ }
+ .Title {
+   border-radius: 20px;
+   background: linear-gradient(45deg, #39378D, #FF2B95);
+   width: 13%;
+ }
+ .extra {
+
+   border-radius: 20px;
+   background: linear-gradient(45deg, #39378D, #FF2B95);
+   width: 36%
+ }
+ .extra2 {
+   padding-left:15px;
+   font-family:"Oswald";
+   border-radius: 20px;
+   background: linear-gradient(45deg, #39378D, #FF2B95);
+   width: 83%;
+   color: white;
+ }
+ hr {
+   background: linear-gradient(45deg, #39378D, #FF2B95);
+   height: 5px;
+   border: none;
+}
     </style>
     <!-- Add both scripts inside the <head> tag. -->
 <!-- You can change the quality parameter to any value between 1 and 100 -->
@@ -117,7 +157,7 @@ img {;
         </div>
       </div>
     </nav>
-      <div style="padding-left:20px;">
+      <div class="Title"style="padding-left:20px;">
         <h1>Blog</h1>
       </div>
     <hr>
@@ -128,8 +168,10 @@ img {;
         had the time to work on it more. I have asked for ideas for the website and have gotten some but
       nothing substantial enough for the website(except for like one but it's more of an "I want credit for making
       this guy depresso for a bit thing")</p>
-      <img alt="snapchat dialog" style="float:left" data-opt-src="./dep.JPG" width="250" height="345"/>
-      <h3 class=blogEntree style="padding-left:250px;"> Lillie, you said you wanted to be on the website, you didn't say how much or what part</h3>
+      <img class=extra alt="snapchat dialog" style="float:left" data-opt-src="./dep.JPG" width="250" height="345"/>
+      <div style='padding-top:2px'>
+      <h3 class="extra2" style="padding-left:270px;"> Lillie, you said you wanted to be on the website, you didn't say how much or what part</h3>
+    </div>
       </div>
       <div style="padding-top:300px">
         <hr>
@@ -176,6 +218,12 @@ img {;
       <h2 class=blogEntreeTitle>Entree #7(5.13.2021)</h2>
       <p class=blogEntree> <b>12:45 PM:</b> <strong>Project P.M.</strong> has been <b>revived</b> despite there being no hope of doing just that. There is no advised action so the action that will be taken
       is <b>default.</b> The expected outcome is <i>optimistic</i>.
+    </p>
+  </div>
+  <hr>
+  <div style="padding-left: 20px;">
+    <h2 class=blogEntreeTitle>Entree #8(5.15.2021)</h2>
+    <p class=blogEntree> <b>10:09 AM:</b> <strong>Project P.M.</strong> has been </b>flourishing</b> since its return. I also have redesigned the website and I think this design will stay on for at least a few months.
     </p>
   </div>
   <hr>
