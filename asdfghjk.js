@@ -1,10 +1,14 @@
-//Attempt to get the element using document.getElementById
-var element = document.getElementById("example");
+// makes logo class a constant
+const logoElement = document.querySelector('.logo')
 
-//If it isn't "undefined" and it isn't "null", then it exists.
-if(typeof(element) != 'undefined' && element != null){
-  alert('Element exists!');
-} else{
-  alert('Element does not exist!');
-}
-//not my code, will change later
+// checks for JMR in the link
+const checkChange = setInterval(()=> {
+  if(logoElement.innerText === 'JMR') {
+    // adds hint(unable to see text unless they check the bottom of the page and highlight it)
+    document.getElementById("hope").innerHTML +=
+       "<h3 style='padding-left:20px;'>This is the text which has been inserted by JS</h3>";
+      alert('Element exists!');
+      // stops check
+    clearTimeout(checkChange)
+  }
+}, 500)
